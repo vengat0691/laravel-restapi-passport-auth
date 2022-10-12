@@ -63,3 +63,6 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 # laravel-restapi-passport-auth
+
+The following link is the tutorial for this experiment using this only experiment done
+https://www.positronx.io/laravel-rest-api-with-passport-authentication-tutorial/
