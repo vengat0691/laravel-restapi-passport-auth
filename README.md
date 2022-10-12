@@ -66,3 +66,6 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 The following link is the tutorial for this experiment using this only experiment done
 https://www.positronx.io/laravel-rest-api-with-passport-authentication-tutorial/
+
+
+Rename .env.original.env file into .env
