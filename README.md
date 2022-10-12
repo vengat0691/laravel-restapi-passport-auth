@@ -64,8 +64,16 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 # laravel-restapi-passport-auth
 
+
+# Vengat Notes *****************************************
+
 The following link is the tutorial for this experiment using this only experiment done
 https://www.positronx.io/laravel-rest-api-with-passport-authentication-tutorial/
 
 
 Rename .env.original.env file into .env
+
+# Vengat Notes *****************************************
+
+Traits experiment also added in this project, Using below tutorial traits done. latest db is laravelapi(1).sql and instead of welcome blade I have used student blade that is the change apart from the tutorial
+https://www.positronx.io/laravel-traits-example/
