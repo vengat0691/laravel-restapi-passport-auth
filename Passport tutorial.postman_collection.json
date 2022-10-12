@@ -1,0 +1,449 @@
+{
+	"info": {
+		"_postman_id": "07abddc0-cf18-4548-b461-4d5d3e9d5f8f",
+		"name": "Passport tutorial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23449039"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYzVlNmFmYTcxMzVkNDg3MWU3ZTQ3NGQ5MjU3OTE4NzU0MTQxNTRmNTNlNTQ0ZDgwNTJmY2VlYTM1ZWZjYzgxMjAwMzQ1MGM4ODY2OWVlYjAiLCJpYXQiOjE2NjU1MDA0OTcsIm5iZiI6MTY2NTUwMDQ5NywiZXhwIjoxNjk3MDM2NDk3LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.ZYGlP6v4bVjUZhx0bs_OPsfTxhDmlm0TSHqJ97vUzAM_3t9SIHITuq-Fhctf-XVUxFW-Yu_I2RVe3dbZ85XbUpNUtbE5GwlAj-sdE-u-MR8hw9-4K3KhUdnAuBOPsKBbKtc2JEp8yInUY1ZMmeDVWviknSGZ1tMYaP-C72OrnfYp_MlBfQV7fjI2qF7w3ov694XRGZKj1apW30P2APoF4ekROXyirlzwlyVHiOVkx9RCzPL_d4n4_Y3TDYeO-kfKb_UkEC85VYUeIENIV93JAgNlTQ89KuzVx_DkSFvSUgMreDlTLbUG_z8Aqma0KUCUG7POuGXvtHCu_nbGyaOeqhYTYyAMN27z6abCjApGplZYbyRALKhQRGJY39_mTWi4JO71IT-MXcozVkh4SIuKxcbzHEPsljzTQ8bIgRI3bjePRg6Z_WfHkQl3TrJhuzS7M2NxtlHWsnFaAZuHwIhqicRZNfgzckto-LJOE61MHx76GZ5HvbaZJSsZ_DfQov9txE1KXRUYX2foY2dokHRiGPFe0jARMhOE2pZkCLGoPUpJAP1llcglm7OCC6DRpNBZEZbg5zSJp6xd_lTuegRFcc32Nki-kQI_1aYNCHtR1s3JoqFUv89ILa7UF03J3nLB8RkGesfndecT177ElzHsXNGUlcc8BXXW6ij8TzOAzkY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "vengat",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "vengadesan.s@isportz.co",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYzVlNmFmYTcxMzVkNDg3MWU3ZTQ3NGQ5MjU3OTE4NzU0MTQxNTRmNTNlNTQ0ZDgwNTJmY2VlYTM1ZWZjYzgxMjAwMzQ1MGM4ODY2OWVlYjAiLCJpYXQiOjE2NjU1MDA0OTcsIm5iZiI6MTY2NTUwMDQ5NywiZXhwIjoxNjk3MDM2NDk3LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.ZYGlP6v4bVjUZhx0bs_OPsfTxhDmlm0TSHqJ97vUzAM_3t9SIHITuq-Fhctf-XVUxFW-Yu_I2RVe3dbZ85XbUpNUtbE5GwlAj-sdE-u-MR8hw9-4K3KhUdnAuBOPsKBbKtc2JEp8yInUY1ZMmeDVWviknSGZ1tMYaP-C72OrnfYp_MlBfQV7fjI2qF7w3ov694XRGZKj1apW30P2APoF4ekROXyirlzwlyVHiOVkx9RCzPL_d4n4_Y3TDYeO-kfKb_UkEC85VYUeIENIV93JAgNlTQ89KuzVx_DkSFvSUgMreDlTLbUG_z8Aqma0KUCUG7POuGXvtHCu_nbGyaOeqhYTYyAMN27z6abCjApGplZYbyRALKhQRGJY39_mTWi4JO71IT-MXcozVkh4SIuKxcbzHEPsljzTQ8bIgRI3bjePRg6Z_WfHkQl3TrJhuzS7M2NxtlHWsnFaAZuHwIhqicRZNfgzckto-LJOE61MHx76GZ5HvbaZJSsZ_DfQov9txE1KXRUYX2foY2dokHRiGPFe0jARMhOE2pZkCLGoPUpJAP1llcglm7OCC6DRpNBZEZbg5zSJp6xd_lTuegRFcc32Nki-kQI_1aYNCHtR1s3JoqFUv89ILa7UF03J3nLB8RkGesfndecT177ElzHsXNGUlcc8BXXW6ij8TzOAzkY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "vengat",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "vengadesan.s@isportz.co",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Post",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYzVlNmFmYTcxMzVkNDg3MWU3ZTQ3NGQ5MjU3OTE4NzU0MTQxNTRmNTNlNTQ0ZDgwNTJmY2VlYTM1ZWZjYzgxMjAwMzQ1MGM4ODY2OWVlYjAiLCJpYXQiOjE2NjU1MDA0OTcsIm5iZiI6MTY2NTUwMDQ5NywiZXhwIjoxNjk3MDM2NDk3LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.ZYGlP6v4bVjUZhx0bs_OPsfTxhDmlm0TSHqJ97vUzAM_3t9SIHITuq-Fhctf-XVUxFW-Yu_I2RVe3dbZ85XbUpNUtbE5GwlAj-sdE-u-MR8hw9-4K3KhUdnAuBOPsKBbKtc2JEp8yInUY1ZMmeDVWviknSGZ1tMYaP-C72OrnfYp_MlBfQV7fjI2qF7w3ov694XRGZKj1apW30P2APoF4ekROXyirlzwlyVHiOVkx9RCzPL_d4n4_Y3TDYeO-kfKb_UkEC85VYUeIENIV93JAgNlTQ89KuzVx_DkSFvSUgMreDlTLbUG_z8Aqma0KUCUG7POuGXvtHCu_nbGyaOeqhYTYyAMN27z6abCjApGplZYbyRALKhQRGJY39_mTWi4JO71IT-MXcozVkh4SIuKxcbzHEPsljzTQ8bIgRI3bjePRg6Z_WfHkQl3TrJhuzS7M2NxtlHWsnFaAZuHwIhqicRZNfgzckto-LJOE61MHx76GZ5HvbaZJSsZ_DfQov9txE1KXRUYX2foY2dokHRiGPFe0jARMhOE2pZkCLGoPUpJAP1llcglm7OCC6DRpNBZEZbg5zSJp6xd_lTuegRFcc32Nki-kQI_1aYNCHtR1s3JoqFUv89ILa7UF03J3nLB8RkGesfndecT177ElzHsXNGUlcc8BXXW6ij8TzOAzkY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "vengat",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "vengadesan.s@isportz.co",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Post",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYzVlNmFmYTcxMzVkNDg3MWU3ZTQ3NGQ5MjU3OTE4NzU0MTQxNTRmNTNlNTQ0ZDgwNTJmY2VlYTM1ZWZjYzgxMjAwMzQ1MGM4ODY2OWVlYjAiLCJpYXQiOjE2NjU1MDA0OTcsIm5iZiI6MTY2NTUwMDQ5NywiZXhwIjoxNjk3MDM2NDk3LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.ZYGlP6v4bVjUZhx0bs_OPsfTxhDmlm0TSHqJ97vUzAM_3t9SIHITuq-Fhctf-XVUxFW-Yu_I2RVe3dbZ85XbUpNUtbE5GwlAj-sdE-u-MR8hw9-4K3KhUdnAuBOPsKBbKtc2JEp8yInUY1ZMmeDVWviknSGZ1tMYaP-C72OrnfYp_MlBfQV7fjI2qF7w3ov694XRGZKj1apW30P2APoF4ekROXyirlzwlyVHiOVkx9RCzPL_d4n4_Y3TDYeO-kfKb_UkEC85VYUeIENIV93JAgNlTQ89KuzVx_DkSFvSUgMreDlTLbUG_z8Aqma0KUCUG7POuGXvtHCu_nbGyaOeqhYTYyAMN27z6abCjApGplZYbyRALKhQRGJY39_mTWi4JO71IT-MXcozVkh4SIuKxcbzHEPsljzTQ8bIgRI3bjePRg6Z_WfHkQl3TrJhuzS7M2NxtlHWsnFaAZuHwIhqicRZNfgzckto-LJOE61MHx76GZ5HvbaZJSsZ_DfQov9txE1KXRUYX2foY2dokHRiGPFe0jARMhOE2pZkCLGoPUpJAP1llcglm7OCC6DRpNBZEZbg5zSJp6xd_lTuegRFcc32Nki-kQI_1aYNCHtR1s3JoqFUv89ILa7UF03J3nLB8RkGesfndecT177ElzHsXNGUlcc8BXXW6ij8TzOAzkY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "vengat1",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "vengadesan.s@isportz.com",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Post",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYzVlNmFmYTcxMzVkNDg3MWU3ZTQ3NGQ5MjU3OTE4NzU0MTQxNTRmNTNlNTQ0ZDgwNTJmY2VlYTM1ZWZjYzgxMjAwMzQ1MGM4ODY2OWVlYjAiLCJpYXQiOjE2NjU1MDA0OTcsIm5iZiI6MTY2NTUwMDQ5NywiZXhwIjoxNjk3MDM2NDk3LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.ZYGlP6v4bVjUZhx0bs_OPsfTxhDmlm0TSHqJ97vUzAM_3t9SIHITuq-Fhctf-XVUxFW-Yu_I2RVe3dbZ85XbUpNUtbE5GwlAj-sdE-u-MR8hw9-4K3KhUdnAuBOPsKBbKtc2JEp8yInUY1ZMmeDVWviknSGZ1tMYaP-C72OrnfYp_MlBfQV7fjI2qF7w3ov694XRGZKj1apW30P2APoF4ekROXyirlzwlyVHiOVkx9RCzPL_d4n4_Y3TDYeO-kfKb_UkEC85VYUeIENIV93JAgNlTQ89KuzVx_DkSFvSUgMreDlTLbUG_z8Aqma0KUCUG7POuGXvtHCu_nbGyaOeqhYTYyAMN27z6abCjApGplZYbyRALKhQRGJY39_mTWi4JO71IT-MXcozVkh4SIuKxcbzHEPsljzTQ8bIgRI3bjePRg6Z_WfHkQl3TrJhuzS7M2NxtlHWsnFaAZuHwIhqicRZNfgzckto-LJOE61MHx76GZ5HvbaZJSsZ_DfQov9txE1KXRUYX2foY2dokHRiGPFe0jARMhOE2pZkCLGoPUpJAP1llcglm7OCC6DRpNBZEZbg5zSJp6xd_lTuegRFcc32Nki-kQI_1aYNCHtR1s3JoqFUv89ILa7UF03J3nLB8RkGesfndecT177ElzHsXNGUlcc8BXXW6ij8TzOAzkY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "vengat1 updated",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "vengadesan.s@isportz.com",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/posts/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"posts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get single post or Edit Post",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				},
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYzVlNmFmYTcxMzVkNDg3MWU3ZTQ3NGQ5MjU3OTE4NzU0MTQxNTRmNTNlNTQ0ZDgwNTJmY2VlYTM1ZWZjYzgxMjAwMzQ1MGM4ODY2OWVlYjAiLCJpYXQiOjE2NjU1MDA0OTcsIm5iZiI6MTY2NTUwMDQ5NywiZXhwIjoxNjk3MDM2NDk3LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.ZYGlP6v4bVjUZhx0bs_OPsfTxhDmlm0TSHqJ97vUzAM_3t9SIHITuq-Fhctf-XVUxFW-Yu_I2RVe3dbZ85XbUpNUtbE5GwlAj-sdE-u-MR8hw9-4K3KhUdnAuBOPsKBbKtc2JEp8yInUY1ZMmeDVWviknSGZ1tMYaP-C72OrnfYp_MlBfQV7fjI2qF7w3ov694XRGZKj1apW30P2APoF4ekROXyirlzwlyVHiOVkx9RCzPL_d4n4_Y3TDYeO-kfKb_UkEC85VYUeIENIV93JAgNlTQ89KuzVx_DkSFvSUgMreDlTLbUG_z8Aqma0KUCUG7POuGXvtHCu_nbGyaOeqhYTYyAMN27z6abCjApGplZYbyRALKhQRGJY39_mTWi4JO71IT-MXcozVkh4SIuKxcbzHEPsljzTQ8bIgRI3bjePRg6Z_WfHkQl3TrJhuzS7M2NxtlHWsnFaAZuHwIhqicRZNfgzckto-LJOE61MHx76GZ5HvbaZJSsZ_DfQov9txE1KXRUYX2foY2dokHRiGPFe0jARMhOE2pZkCLGoPUpJAP1llcglm7OCC6DRpNBZEZbg5zSJp6xd_lTuegRFcc32Nki-kQI_1aYNCHtR1s3JoqFUv89ILa7UF03J3nLB8RkGesfndecT177ElzHsXNGUlcc8BXXW6ij8TzOAzkY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "vengat1",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "vengadesan.s@isportz.com",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/posts/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"posts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Post",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYzVlNmFmYTcxMzVkNDg3MWU3ZTQ3NGQ5MjU3OTE4NzU0MTQxNTRmNTNlNTQ0ZDgwNTJmY2VlYTM1ZWZjYzgxMjAwMzQ1MGM4ODY2OWVlYjAiLCJpYXQiOjE2NjU1MDA0OTcsIm5iZiI6MTY2NTUwMDQ5NywiZXhwIjoxNjk3MDM2NDk3LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.ZYGlP6v4bVjUZhx0bs_OPsfTxhDmlm0TSHqJ97vUzAM_3t9SIHITuq-Fhctf-XVUxFW-Yu_I2RVe3dbZ85XbUpNUtbE5GwlAj-sdE-u-MR8hw9-4K3KhUdnAuBOPsKBbKtc2JEp8yInUY1ZMmeDVWviknSGZ1tMYaP-C72OrnfYp_MlBfQV7fjI2qF7w3ov694XRGZKj1apW30P2APoF4ekROXyirlzwlyVHiOVkx9RCzPL_d4n4_Y3TDYeO-kfKb_UkEC85VYUeIENIV93JAgNlTQ89KuzVx_DkSFvSUgMreDlTLbUG_z8Aqma0KUCUG7POuGXvtHCu_nbGyaOeqhYTYyAMN27z6abCjApGplZYbyRALKhQRGJY39_mTWi4JO71IT-MXcozVkh4SIuKxcbzHEPsljzTQ8bIgRI3bjePRg6Z_WfHkQl3TrJhuzS7M2NxtlHWsnFaAZuHwIhqicRZNfgzckto-LJOE61MHx76GZ5HvbaZJSsZ_DfQov9txE1KXRUYX2foY2dokHRiGPFe0jARMhOE2pZkCLGoPUpJAP1llcglm7OCC6DRpNBZEZbg5zSJp6xd_lTuegRFcc32Nki-kQI_1aYNCHtR1s3JoqFUv89ILa7UF03J3nLB8RkGesfndecT177ElzHsXNGUlcc8BXXW6ij8TzOAzkY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "vengat1",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "vengadesan.s@isportz.com",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/posts/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"posts",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

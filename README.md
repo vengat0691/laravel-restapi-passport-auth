@@ -65,7 +65,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 # laravel-restapi-passport-auth
 
 
-# Vengat Notes *****************************************
+# Vengat Notes for rest api with passport *****************************************
 
 The following link is the tutorial for this experiment using this only experiment done
 https://www.positronx.io/laravel-rest-api-with-passport-authentication-tutorial/
@@ -73,7 +73,9 @@ https://www.positronx.io/laravel-rest-api-with-passport-authentication-tutorial/
 
 Rename .env.original.env file into .env
 
-# Vengat Notes *****************************************
+postman collection file is included in the project folder
+
+# Vengat Notes for traits *****************************************
 
 Traits experiment also added in this project, Using below tutorial traits done. latest db is laravelapi(1).sql and instead of welcome blade I have used student blade that is the change apart from the tutorial
 https://www.positronx.io/laravel-traits-example/
